@@ -1,0 +1,58 @@
+/* 
+
+body{
+    color: #000;
+    
+        background:
+    linear-gradient(
+         #070707,
+        #070707 2px,
+       transparent 2px,
+       transparent
+    ),
+    
+    linear-gradient(
+    transparent, 
+    #fff 70%
+    ),
+
+    repeating-linear-gradient(
+        #efefef,
+        #efefef 1px,
+       transparent 1px,
+       transparent 40px
+    ),
+    repeating-linear-gradient(
+        to right,
+        #efefef,
+        #efefef 1px,
+       transparent 1px,
+       transparent 40px
+    )
+} */
+
+/* body{
+    background: url(/function/pattern\ 1.png) center/cover no-repeat;
+    height: 100dvh;
+} */
+
+/* body {
+ position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right, #ffffff12 1px, transparent 1px),
+    linear-gradient(to bottom, #80808012 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-color: rgb(73, 18, 255);
+} */
+body{
+ 
+  background: radial-gradient(
+   125% 125% at 50% 100%,
+    #000000 40%,
+    #010133 100%
+  ) center/cover no-repeat;
+    height: 100dvh;
+
+}

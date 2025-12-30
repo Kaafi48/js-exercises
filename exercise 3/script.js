@@ -9,3 +9,4 @@ console.log(isSunyy && hasWeekend);
 console.log(isSunyy || hasWeekend);
 console.log(!isSunyy);
 console.log(!hasWeekend);
+
