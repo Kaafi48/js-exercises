@@ -55,5 +55,5 @@ calculateTotall(20,4);
         };
     }
 
-   console.log(xisaabinLacag(5000,4000));
+   console.log(xisaabinLacag(5000,4400));
 }
