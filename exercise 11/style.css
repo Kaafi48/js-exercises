@@ -1,0 +1,148 @@
+/* =========================
+   THEME VARIABLES
+========================= */
+
+/* Default = LIGHT */
+:root {
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --text: #020617;
+    --muted: #475569;
+    --border: #e5e7eb;
+
+    --primary: #10b981;
+
+    /* grid */
+    --grid-color: rgba(15, 23, 42, 0.06);
+
+}
+
+/* DARK MODE */
+body.dark {
+    --bg: #0f172a;
+    --surface: #020617;
+    --text: #e5e7eb;
+    --muted: #94a3b8;
+    --border: #1e293b;
+
+    --primary: #10b981;
+   
+    --grid-color: rgba(91, 82, 139, 0.09);
+    
+}
+
+/* =========================
+   RESET & BASE
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: system-ui, sans-serif;
+    color: var(--text);
+
+    background-color: var(--bg);
+    background-image:
+        linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
+    background-size: 200px 200px;
+    z-index: -1;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 32px;
+    
+}
+
+.logo {
+ 
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.toggle-btn {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    cursor: pointer;
+
+}
+
+/* =========================
+   PAGE LAYOUT
+========================= */
+
+.page {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================
+   CARD / FORM
+========================= */
+
+.card {
+    width: 100%;
+    max-width: 420px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 32px;
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+    margin-bottom: 8px;
+}
+
+.card p {
+    margin-bottom: 24px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.form {
+    display: grid;
+    gap: 14px;
+}
+
+.form input {
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text);
+}
+
+.form input::placeholder {
+    color: var(--muted);
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: var(--primary);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
